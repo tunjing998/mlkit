@@ -164,3 +164,13 @@ public class FaceDetectionActivity extends AppCompatActivity {
         // [END mlkit_face_list]
     }
 }
+
+val result = detector.process(image)
+        .addOnSuccessListener { faces ->
+            // Task completed successfully
+            // ...
+        }
+        .addOnFailureListener { e ->
+            // Task failed with an exception
+            // ...
+        }
